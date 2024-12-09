@@ -23,7 +23,7 @@ export default function FileUpload() {
     formData.append('document', file)
 
     try {
-      const response = await fetch('http://localhost:4000/api/process-document', {
+      const response = await fetch('https://finetunerspdf-back.vercel.app/api/process-document', {
         method: 'POST',
         body: formData,
       })
