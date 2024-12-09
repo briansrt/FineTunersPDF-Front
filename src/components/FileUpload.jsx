@@ -34,13 +34,13 @@ export default function FileUpload() {
           setUploadProgress(i)
           await new Promise(resolve => setTimeout(resolve, 100))
         }
-        alert('Archivo subido con éxito!')
+        alert('File uploaded successfully!')
       } else {
-        throw new Error('Error al subir el archivo')
+        throw new Error('Error uploading file')
       }
     } catch (error) {
       console.error('Error:', error)
-      alert('Error al subir el archivo')
+      alert('Error uploading file')
     } finally {
       setIsUploading(false)
       setUploadProgress(0)
