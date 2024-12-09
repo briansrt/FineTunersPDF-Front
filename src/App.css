@@ -1,0 +1,17 @@
+.home {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .home {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    padding: 3rem 2rem;
+  }
+}
+
