@@ -28,10 +28,10 @@ export default function DropZone({ onFileChange }) {
       <input {...getInputProps()} />
       <Upload className="dropzone__icon" size={32} />
       <p className="dropzone__text">
-        Arrastra y suelta un archivo aquí, o haz clic para seleccionar
+        Drag and drop a file here, or click to select
       </p>
       <p className="dropzone__subtext">
-        (Solo se permiten imágenes y PDFs)
+        (Only images and PDFs are allowed)
       </p>
     </div>
   )

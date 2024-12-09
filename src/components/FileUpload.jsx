@@ -53,7 +53,7 @@ export default function FileUpload() {
 
   return (
     <div className="file-upload">
-      <h2 className="file-upload__title">Subir Archivo Post-Quirurjico</h2>
+      <h2 className="file-upload__title">Upload Post-Surgery File</h2>
       <DropZone onFileChange={handleFileChange} />
       {file && (
         <div className="file-upload__preview">
@@ -80,7 +80,7 @@ export default function FileUpload() {
             <span>{uploadProgress}%</span>
           </div>
         ) : (
-          'Subir Archivo'
+          'Upload File'
         )}
       </button>
     </div>
