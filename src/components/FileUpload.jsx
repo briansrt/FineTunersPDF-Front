@@ -116,6 +116,7 @@ export default function FileUpload() {
         <option value="+52">+52 (Mexico)</option>
         <option value="+57">+57 (Colombia)</option>
         <option value="+27">+27 (South Africa)</option>
+        <option value="+54">+54 (argentina)</option>
 
           {/* Add more country codes as needed */}
         </select>
