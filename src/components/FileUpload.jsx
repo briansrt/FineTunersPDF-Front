@@ -47,7 +47,7 @@ export default function FileUpload() {
     formData.append('phoneNumber', `${countryCode}${phoneNumber}`);
 
     try {
-      const response = await fetch('https://finetunerspdf-back-hcu3msajj-briansrts-projects.vercel.app/api/process-document', {
+      const response = await fetch('https://finetunerspdf-back.vercel.app/api/process-document', {
         method: 'POST',
         body: formData,
       });
@@ -102,20 +102,20 @@ export default function FileUpload() {
           onChange={handleCountryCodeChange}
         >
           <option value="+1">+1 (USA)</option>
-          <option value="+44">+44 (UK)</option>
-          <option value="+49">+49 (Germany)</option>
-          <option value="+33">+33 (France)</option>
-          <option value="+81">+81 (Japan)</option>
-          <option value="+34">+34 (Spain)</option>
-          <option value="+39">+39 (Italy)</option>
-          <option value="+55">+55 (Brazil)</option>
-          <option value="+61">+61 (Australia)</option>
-          <option value="+91">+91 (India)</option>
-          <option value="+86">+86 (China)</option>
-          <option value="+7">+7 (Russia)</option>
-          <option value="+52">+52 (Mexico)</option>
-          <option value="+57">+57 (Colombia)</option>
-          <option value="+27">+27 (South Africa)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+49">+49 (Germany)</option>
+        <option value="+33">+33 (France)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+34">+34 (Spain)</option>
+        <option value="+39">+39 (Italy)</option>
+        <option value="+55">+55 (Brazil)</option>
+        <option value="+61">+61 (Australia)</option>
+        <option value="+91">+91 (India)</option>
+        <option value="+86">+86 (China)</option>
+        <option value="+7">+7 (Russia)</option>
+        <option value="+52">+52 (Mexico)</option>
+        <option value="+57">+57 (Colombia)</option>
+        <option value="+27">+27 (South Africa)</option>
 
           {/* Add more country codes as needed */}
         </select>
