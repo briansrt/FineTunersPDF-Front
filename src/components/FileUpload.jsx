@@ -47,7 +47,7 @@ export default function FileUpload() {
     formData.append('phoneNumber', `${countryCode}${phoneNumber}`);
 
     try {
-      const response = await fetch('https://finetunerspdf-back.vercel.app/api/process-document', {
+      const response = await fetch('https://finetunerspdf-back-hcu3msajj-briansrts-projects.vercel.app/api/process-document', {
         method: 'POST',
         body: formData,
       });
