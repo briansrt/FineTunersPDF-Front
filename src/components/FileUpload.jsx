@@ -76,7 +76,7 @@ export default function FileUpload() {
   };
 
   return (
-    <div className="file-upload">
+    <div className="file-upload" style={{border: "solid 1px #000"}}>
       <h2 className="file-upload__title">Upload Post-Surgery File</h2>
       <DropZone onFileChange={handleFileChange} />
       {file && (
@@ -102,21 +102,21 @@ export default function FileUpload() {
           onChange={handleCountryCodeChange}
         >
           <option value="+1">+1 (USA)</option>
-        <option value="+44">+44 (UK)</option>
-        <option value="+49">+49 (Germany)</option>
-        <option value="+33">+33 (France)</option>
-        <option value="+81">+81 (Japan)</option>
-        <option value="+34">+34 (Spain)</option>
-        <option value="+39">+39 (Italy)</option>
-        <option value="+55">+55 (Brazil)</option>
-        <option value="+61">+61 (Australia)</option>
-        <option value="+91">+91 (India)</option>
-        <option value="+86">+86 (China)</option>
-        <option value="+7">+7 (Russia)</option>
-        <option value="+52">+52 (Mexico)</option>
-        <option value="+57">+57 (Colombia)</option>
-        <option value="+27">+27 (South Africa)</option>
-        <option value="+54">+54 (argentina)</option>
+          <option value="+44">+44 (UK)</option>
+          <option value="+49">+49 (Germany)</option>
+          <option value="+33">+33 (France)</option>
+          <option value="+81">+81 (Japan)</option>
+          <option value="+34">+34 (Spain)</option>
+          <option value="+39">+39 (Italy)</option>
+          <option value="+55">+55 (Brazil)</option>
+          <option value="+61">+61 (Australia)</option>
+          <option value="+91">+91 (India)</option>
+          <option value="+86">+86 (China)</option>
+          <option value="+7">+7 (Russia)</option>
+          <option value="+52">+52 (Mexico)</option>
+          <option value="+57">+57 (Colombia)</option>
+          <option value="+27">+27 (South Africa)</option>
+          <option value="+54">+54 (Argentina)</option>
 
           {/* Add more country codes as needed */}
         </select>
